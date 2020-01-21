@@ -20,6 +20,19 @@ data("gapminder_unfiltered")
 gapminder_unfiltered
 ```
 
+
+
+
+calculate Maximum
+```{r}
+library(tidyverse)
+gapminder_unfiltered%>%
+select(year,lifeExp)->cd
+
+cd%>%
+arrange(desc(lifeExp))
+```
+
 #plot
 
 
